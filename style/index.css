@@ -59,6 +59,7 @@ table {
 html {
     font-size: 62.5%;
     margin: 0 auto;
+    
    
 
 }
@@ -228,9 +229,6 @@ span {
     
 }
 
-"footer-image" {
-    width : 1%;
-}
 
 
 
@@ -274,40 +272,64 @@ button {
     padding-bottom:40%;
 
 }
+@media(max-width:800px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .intro a{
+        width: 25%;
+    }
+    .intro{
+        
+        padding-right:1%;
+        }
+    button{
+        width:20%;
+    }
+    }
 
 
 @media(max-width:500px) {
+    
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
     }
     
     .header-bar {
-        width: 15%;
+        width: 55%;
         border-radius: 5px;
+    margin-top: 0%;
+    margin-bottom: 0%;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .first {
         display: flex;
         flex-direction: column;
+        
     }
 .first img {
     width: 50%;
+    margin-top: 5%;
 }
-
-
-
 .intro {
     width:100%;
     justify-content: space-around;
 }
+#projects {
+    height: 60vw;
+}
+.project {
+    width:40%;
+    margin:2%;
+}
 .part1, .part2 {
-    width: 90%;
-    
-    justify-content: space-evenly;
-    text-align: justify;
-    
+    flex-wrap: wrap;
 }
 footer {
     text-align: center;
